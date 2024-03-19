@@ -10,7 +10,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
           if (username === credentials.username && password === credentials.password) {
               document.getElementById('message').textContent = 'Login successful! In a real app, you would be redirected to another page.';
               document.getElementById('message').className = 'alert alert-success';
-              window.location.href = 'query.html';
+              window.location.href = './query.html';
           } else {
               document.getElementById('message').textContent = 'Invalid username or password.';
               document.getElementById('message').className = 'alert alert-danger';
