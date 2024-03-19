@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Filters</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/docs/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Let's try a Complex Query</h1>
+        <h2 class="text-center">Table name: economic - Filtering Nations with Average Salary > $30,000 and Population is less than 40.000.000</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nation</th>
+                    <th>Population</th>
+                    <th>Average Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>USA</td>
+                    <td>331,002,651</td>
+                    <td>$63,179</td>
+                </tr>
+                <tr>
+                    <td>China</td>
+                    <td>1,439,323,776</td>
+                    <td>$10,410</td>
+                </tr>
+                <tr>
+                    <td>India</td>
+                    <td>1,366,417,754</td>
+                    <td>$2,041</td>
+                </tr>
+                <tr>
+                    <td>Brazil</td>
+                    <td>211,049,527</td>
+                    <td>$9,140</td>
+                </tr>
+                <tr>
+                    <td>Russia</td>
+                    <td>145,934,462</td>
+                    <td>$11,286</td>
+                </tr>
+                <tr>
+                    <td>Germany</td>
+                    <td>83,783,942</td>
+                    <td>$50,206</td>
+                </tr>
+                <tr>
+                    <td>Japan</td>
+                    <td>126,476,461</td>
+                    <td>$46,782</td>
+                </tr>
+                <tr>
+                    <td>France</td>
+                    <td>65,273,511</td>
+                    <td>$43,551</td>
+                </tr>
+                <tr>
+                    <td>United Kingdom</td>
+                    <td>67,886,011</td>
+                    <td>$46,827</td>
+                </tr>
+                <tr>
+                    <td>Italy</td>
+                    <td>60,461,826</td>
+                    <td>$34,260</td>
+                </tr>
+                <tr>
+                    <td>Canada</td>
+                    <td>37,742,154</td>
+                    <td>$46,194</td>
+                </tr>
+                <tr>
+                    <td>Australia</td>
+                    <td>25,499,884</td>
+                    <td>$55,060</td>
+                </tr>
+                <tr>
+                    <td>South Korea</td>
+                    <td>51,269,185</td>
+                    <td>$31,363</td>
+                </tr>
+                <tr>
+                    <td>Spain</td>
+                    <td>46,754,778</td>
+                    <td>$30,615</td>
+                </tr>
+                <tr>
+                    <td>Mexico</td>
+                    <td>128,932,753</td>
+                    <td>$9,412</td>
+                </tr>
+                <tr>
+                    <td>Indonesia</td>
+                    <td>273,523,615</td>
+                    <td>$4,102</td>
+                </tr>
+                <tr>
+                    <td>Netherlands</td>
+                    <td>17,134,872</td>
+                    <td>$58,876</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>SQL Query Form</h2>
+        <form id="query-form">
+            <div class="form-group">
+                <label for="query-input">Enter your SQL query:</label>
+                <input type="text" class="form-control" id="query-input" placeholder="Enter your query">
+            </div>
+            <button type="submit" class="btn btn-primary">Execute</button>
+        </form>
+    </div>
+    <script src="/docs/js/filters.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

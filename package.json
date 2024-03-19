@@ -1,0 +1,25 @@
+{
+  "name": "my-web-app",
+  "version": "1.0.0",
+  "description": "A web app for students to learn how to use queries in databases",
+  "main": "docs/js/main.js",
+  "scripts": {
+    "test": "node tests/test.js"
+  },
+  "keywords": [
+    "web app",
+    "database",
+    "queries",
+    "students"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "mocha": "^9.1.3",
+    "chai": "^4.3.4"
+  }
+}

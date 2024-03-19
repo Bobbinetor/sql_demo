@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Query</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/docs/css/styles.css">
+    <style>
+        #query {
+            font-size: 18px;
+        }
+        #users-table {
+            margin-top: 50px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #users-table th, #users-table td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        #users-table th {
+            background-color: #f2f2f2;
+        }
+        #users-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        #users-table tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">SQL Query</h1>
+        <p>The following SQL query would have been executed to check your login credentials:</p>
+        <pre id="query"></pre>
+
+        <h2 class="text-center">Table: users</h2>
+        <table id="users-table">
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Password</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="student-row">
+                    <td>student</td>
+                    <td>password1</td>
+                </tr>
+                <tr id="giovanni-row">
+                    <td>Giovanni</td>
+                    <td>Rodari</td>
+                </tr>
+                <tr>
+                    <td>Mario</td>
+                    <td>Rossi</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+
+        <h2 class="text-center">Enter Query</h2>
+        <form id="query-form">
+            <div class="form-group">
+                <label for="query-input">Query:</label>
+                <input type="text" class="form-control" id="query-input" placeholder="Enter your query">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <script src="/docs/js/query.js"></script>
+    <!-- no we have to insert another button right part for going next page -->
+    <div class="text-center">
+        <a href="index.html" class="btn btn-primary">Go to Login</a>
+        <a href="filters.html" class="btn btn-primary">Go to Exercise</a>
+    </div>
+    
+
+</body>
+</html>
