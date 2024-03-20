@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         // Now you can use the queryInput variable in your code
         console.log(queryInput);
 
-        // Check if the query matches the pattern "SELECT * FROM Nations WHERE average_salary > 30000 AND population < 40000000"
-        var pattern = /^SELECT \* FROM economic WHERE Average Salary > 30000 AND Population < 40000000$/i;
+        // Check if the query matches the pattern "SELECT * FROM economic WHERE average_salary > 30000 AND population < 40000000"
+        var pattern = /^SELECT\s*\*\s*FROM\s*economic\s*WHERE\s*Average\s*Salary\s*>\s*30000\s*AND\s*Population\s*<\s*40000000$/i;
         if (pattern.test(queryInput)) {
             alert('Correct query!');
         } else {
