@@ -1,5 +1,5 @@
 const queryElement = document.getElementById('query');
-const queryText = 'SELECT * FROM users WHERE username = "student" AND password = "password"';
+const queryText = 'SELECT * FROM users WHERE username = \'student\' AND password = \'password\'';
 let index = 0;
 
 const intervalId = setInterval(() => {
