@@ -48,6 +48,16 @@
         button:hover {
             background-color: #555;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
     </style>
 </head>
 <body>
@@ -62,6 +72,17 @@
             <input type="text" id="hashedPassword" readonly>
         </div>
         <button onclick="hashPassword()">Hash Password</button>
+        <table id="passwordTable">
+            <caption>Clear Text Passwords</caption>
+            <thead>
+                <tr>
+                    <th>Password</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Passwords will be dynamically added here -->
+            </tbody>
+        </table>
     </div>
     <script src="js/hash.js"></script>
 </body>
