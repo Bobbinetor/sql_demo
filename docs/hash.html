@@ -20,6 +20,7 @@
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center the form */
         }
         .form-group {
             margin-bottom: 20px;
@@ -29,14 +30,9 @@
             font-weight: bold;
             margin-bottom: 5px;
         }
-        input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            border-radius: 3px;
-            border: 1px solid #ccc;
-        }
+        input[type="password"],
         input[type="text"] {
-            width: 100%;
+            width: 90%; /* Make the input fields slightly less wide */
             padding: 10px;
             border-radius: 3px;
             border: 1px solid #ccc;
@@ -67,15 +63,6 @@
         </div>
         <button onclick="hashPassword()">Hash Password</button>
     </div>
-
-    <script>
-        function hashPassword() {
-            var passwordInput = document.getElementById("password");
-            var hashedPassword = sha256(passwordInput.value); // Replace with your preferred hashing algorithm
-
-            var hashedPasswordElement = document.getElementById("hashedPassword");
-            hashedPasswordElement.value = hashedPassword;
-        }
-    </script>
+    <script src="js/hash.js"></script>
 </body>
 </html>
